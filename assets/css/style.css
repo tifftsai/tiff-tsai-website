@@ -28,10 +28,6 @@ theme.
 	14. Contact page
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Spectral:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
-
-
 
 /* --------------------------------
 
@@ -39,6 +35,91 @@ theme.
 
 -------------------------------- */
 
+
+
+/* ----------------------------------------
+FONTS
+--------------------------------------- */
+
+/**
+ * @license
+ *
+ * Font Family: Cabinet Grotesk
+ * Designed by: Indian Type Foundry
+ * URL: https://www.fontshare.com/fonts/cabinet-grotesk
+ * © 2021 Indian Type Foundry
+ *
+ * Font Styles:
+ * Cabinet Grotesk Variable(Variable font)
+ * Cabinet Grotesk Thin
+ * Cabinet Grotesk Extralight
+ * Cabinet Grotesk Light
+ * Cabinet Grotesk Regular
+ * Cabinet Grotesk Medium
+ * Cabinet Grotesk Bold
+ * Cabinet Grotesk Extrabold         
+ * Cabinet Grotesk Black
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 900.0)
+
+*/
+
+@font-face {
+    font-family: 'CabinetGrotesk-Variable';
+    src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'CabinetGrotesk-Regular';
+    src: url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Regular.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'CabinetGrotesk-Medium';
+    src: url('../fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Medium.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'CabinetGrotesk-Bold';
+    src: url('../fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Bold.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400&display=swap');
+
+/* END OF FONTS */  
 
 *{
 	outline:0;padding: 0;margin:0;
@@ -49,8 +130,8 @@ theme.
 body {
 
 		background: #fff;
-		color:#0D3735;
-    font:400 16px/1.8 'Karla', sans-serif;
+		color:#184B44;
+    font:400 16px/1.8 'Libre Franklin', sans-serif;
 		-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -64,8 +145,8 @@ body {
 /* #####  text  ##### */
 
 h1,h2,h3,h4,h5,h6{
-	color:#0D3735;
-	font-family: 'Spectral', serif;
+	color:#184B44;
+	font-family: 'CabinetGrotesk-Medium', serif;
 }
 
 a:hover:after {
@@ -81,7 +162,7 @@ ol, ul {
 }
 
 p{
-    color: #0D3735;
+    color: #184B44;
     font-weight: 400;
     margin-bottom: 32px;
 }
@@ -93,21 +174,18 @@ p{
 
 
 .intro h1 {
-	font-size: 72px;
-    line-height: 80px;
-	color: #0D3735;
-	font-weight: 500;
-    font-style: italic;
+	font-size: 48px;
+    line-height: 56px;
+	color: #184B44;
 }
 
 .box-intro h3 {
-		font-family: "Cantarell", sans-serif;
+		font-family: "CabinetGrotesk-Medium", sans-serif;
 		font-size: 14px;
 		letter-spacing: 10px;
 		text-transform: uppercase;
-		color: #000;
+		color: #184B44;
 		line-height: 4;
-		font-weight: 700;
 }
 
 /*mobile*/
@@ -358,14 +436,14 @@ section{
 a{
     text-decoration: none;
     font-weight: 400;
-    color: #0D3735;
+    color: #184B44;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 .btn-hero:hover:after {
     width: 100%;
- 	background-color: #0D3735;
+ 	background-color: #184B44;
 }
 
 .btn-hero-white:hover:after {
@@ -380,7 +458,7 @@ a{
     padding: 0 0 50px 0;
     font-size: 16px;
     font-weight: 600;
- 	color: #0D3735;
+ 	color: #184B44;
 }
 
 .default-btn i {
@@ -391,10 +469,10 @@ a{
     transition: all .3s ease-in-out;
     right: 30px;
     top: 0;
-    color:#0D3735;
+    color:#184B44;
 }
 .gray-btn{
-		color: #0D3735 !important;
+		color: #184B44 !important;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px !important;
@@ -416,7 +494,7 @@ a{
     left: 0;
     width: 50%;
     height: 2px;
-    background-color: #0D3735;
+    background-color: #184B44;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -442,8 +520,8 @@ a{
 /*section's titles*/
 
 .module-subtitle {
-    color: #0D3735;
-    font-family: "Karla", "Times New Roman", sans-serif;
+    color: #184B44;
+    font-family: "Libre Franklin", sans-serif;
     text-align: center;
     font-size: 20px;
     margin-bottom: 50px;
@@ -507,9 +585,8 @@ a{
 .section-title h2{
 	font-size: 72px;
     line-height: 80px;
-	color: #0D3735;
+	color: #184B44;
 	font-weight: 500;
-    font-style: italic;
 }
 
 .section-title-parralax h2{
@@ -801,7 +878,7 @@ ul.tags li a:hover{
     transform: translateX(-50%) translateY(-50%);
     width: 35px;
     height: 2px;
-    background-color: #0D3735;
+    background-color: #184B44;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     list-style: none;
@@ -813,7 +890,7 @@ ul.tags li a:hover{
     width: 80%;
     height: 100%;
     position: absolute;
-    background-color: #0D3735;
+    background-color: #184B44;
     right: 0;
     -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
     -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
@@ -896,15 +973,14 @@ ul.tags li a:hover{
 }
 
 .box-primary-nav a {
-    font-family: "Spectral", serif;
+    font-family: "CabinetGrotesk-Medium", sans-serif;
     font-size: 32px;
-    font-style: italic;
     display: inline-block;
     padding: .4em 1em;
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #0D3735;
+    color: #184B44;
     text-decoration: none;
 }
 .box-primary-nav a:focus {
@@ -913,7 +989,7 @@ ul.tags li a:hover{
 
 .no-touch .box-primary-nav a:hover {
     text-decoration: underline;
-    color: #0D3735;
+    color: #184B44;
 }
 
 
@@ -1222,7 +1298,7 @@ b i:last-child {
 /* #####  Footer  ##### */
 
 footer.main-footer{
-		background-color: #0D3735;
+		background-color: #184B44;
 		z-index: 0;
 }
 
@@ -1232,9 +1308,7 @@ footer p {
 
 footer a {
     color: rgb(207, 207, 207);
-    font-family: "Spectral", "Times New Roman", sans-serif;
-    font-style: italic;
-    font-weight: 400;
+    font-family: "CabinetGrotesk-Medium", sans-serif;
 }
 
 footer a:hover {
@@ -1248,7 +1322,7 @@ footer a:hover {
 
 .footer-widget h4 {
 		color: #aaa;
-        font-family: "Karla", sans-serif;
+        font-family: "Libre Franklin", sans-serif;
         letter-spacing: 1px;
 		text-transform: uppercase;
 		margin-bottom: 30px;
@@ -1331,7 +1405,7 @@ footer a:hover {
 }
 
 .contact-widget ul li p a {
-   	color: #0D3735;
+   	color: #184B44;
 }
 
 .contact-widget p {
@@ -1658,12 +1732,11 @@ footer a:hover {
 
 .portfolio_item .portfolio_item_hover .item_info span{
 		display: inline-block;
-		font-family: 'Spectral', sans-serif;
+		font-family: 'CabinetGrotesk-Medium', sans-serif;
 		font-weight: 400;
-		color:#0D3735;
+		color:#184B44;
 		font-size: 24px;
         line-height: 125%;
-        font-style: italic;
 		-webkit-transform:translateY(20px);
 	    -ms-transform:translateY(20px);
 	        transform:translateY(20px);
@@ -1675,14 +1748,14 @@ footer a:hover {
 .portfolio_item .portfolio_item_hover .item_info em{
 	font-weight: 400;
 	display: inline-block;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
     line-height: 125%;
     text-transform: uppercase;
     font-style: normal;
     letter-spacing: 1px;
 	padding: 5px;
-	color:#0D3735;
+	color:#184B44;
 	margin-top: 5px;
 	-webkit-transform:translateY(20px);
 	    -ms-transform:translateY(20px);
@@ -1973,18 +2046,18 @@ footer a:hover {
 .flexslider h5 {
     font-size: 18px;
     line-height: 26px;
-    font-family: "Spectral", "Times New Roman", serif;
+    font-family: "Libre Franklin", sans-serif;
     margin: 30px 0;
     text-align: center;
     color: #fff;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .flexslider p {
     color: #fff;
     letter-spacing: 2px;
     text-align: center;
-    font-family: "Karla", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -2021,27 +2094,25 @@ footer a:hover {
 }
 
 .contact h4{
-	color: #0D3735;
+	color: #184B44;
     font-size: 32px;
     font-weight: 500;
     line-height: 1.5;
-    font-style: italic;
 }
 
 .contact h5{
-	color: #0D3735;
+	color: #184B44;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
-    font-style: italic;
 }
 
 .contact a:hover{
-		color: #0D3735;
+		color: #184B44;
 }
 
 .contact a{
-		color: #0D3735;
+		color: #184B44;
 }
 
 .newsletter{
@@ -2102,10 +2173,9 @@ footer a:hover {
 }
 
 .site-hero_2 h2{
-    font-family: "Spectral", serif;
-    font-style: italic;
+    font-family: "Cabinet Grotesk", sans-serif;
     font-weight: 500;
-	color: #0D3735;
+	color: #184B44;
     font-size: 32px;
     line-height: 100%;
 }
@@ -2123,17 +2193,15 @@ footer a:hover {
 
 #facts h1, .numscroller{
     font-size: 64px;
-	color: #0D3735;
+	color: #184B44;
 	font-weight: 300;
-    font-style: italic;
 }
 
 
 #facts h3{
     font-size: 24px;
-	color: #0D3735;
+	color: #184B44;
 	font-weight: 300;
-    font-style: italic;
 }
 
 .slide {
@@ -2167,7 +2235,7 @@ ul.project_list li:before{
 	content: '\e87f';
     position: absolute;
     left: 0;
-    color: #0D3735;
+    color: #184B44;
 }
 
 ul.social-icons li {
