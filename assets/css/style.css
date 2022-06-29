@@ -149,6 +149,10 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'CabinetGrotesk-Medium', serif;
 }
 
+h5 {
+    line-height: 1.75;
+}
+
 a:hover:after {
     width: 50%;
 }
@@ -164,7 +168,7 @@ ol, ul {
 p{
     color: #184B44;
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .lead{
